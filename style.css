@@ -1,0 +1,407 @@
+/* 导航 */
+.ykt-all{
+  background-color: white;
+}
+
+
+
+
+/* 瀑布图 */
+.grid-item { width:350px; margin-bottom: 20px; }
+
+.grid-item_img{
+  /* max-width: 300px; */
+  border-radius: 8px;
+}
+
+/* 弹窗 */
+div.ux_nos_mask {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.9) !important;
+  z-index: 200;
+  align-items: center;
+  justify-content: center;
+}
+
+.ux_nos_mask_hide{
+  display: none !important;
+}
+
+#j_nos_modal_cnt{
+  position: relative;
+  width: 900px;
+  min-height: 700px;
+
+  background: #141720;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+a.ux_nos_mask_tBtn{
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  background: #141720;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: auto;
+  cursor: pointer;
+  transition: backgroundColor 200ms ease-in-out;
+}
+
+.ux_nos_mask_tBtn:hover{
+  background-color: #FC1E1E;
+}
+
+.ux_nos_mask_prevBtn{
+  left: -50px;
+}
+
+.ux_nos_mask_nextBtn{
+  right: -50px;
+  transform: rotate(180deg);
+}
+
+.ux_nos_mask_drop{
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ux_nos_mask_drop_fill{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.ux_nos_mask_drop_img{
+  width: 100vw;
+}
+
+.ux_nos_mask_drop_p{
+  backdrop-filter: blur(20px);
+}
+
+.m-yktfoot {
+  background: #000
+}
+
+.m-yktfoot_share_weixin {
+  position: relative;
+  top: -1px;
+  margin-right: 20px;
+  float: right
+}
+
+.m-yktfoot_share_weibo {
+  position: relative;
+  top: -1px;
+  float: right
+}
+
+.m-yktfoot_wrapper {
+  margin: 0 auto;
+  line-height: 23px;
+  position: relative;
+  color: #fff
+}
+
+.m-yktfoot_lf {
+  width: 900px;
+  padding: 36px 0
+}
+
+.m-yktfoot_about {
+  line-height: 19px
+}
+
+.m-yktfoot_about>a {
+  margin-right: 17px;
+  padding: 0;
+  text-decoration: none;
+  color: #fff
+}
+
+.m-yktfoot_about>a:hover {
+  text-decoration: underline
+}
+
+.m-yktfoot_txt {
+  width: 740px;
+  line-height: 22px;
+  margin-bottom: 11px
+}
+
+.m-yktfoot_rt {
+  padding: 30px 0px 0;
+  font-size: 12px;
+  text-align: right;
+  line-height: 22px
+}
+
+.m-yktfoot_copy {
+  color: #999;
+  font-size: 14px;
+  margin: 10px 0 0
+}
+
+.m-yktfoot_copy_link {
+  color: #999
+}
+
+.m-yktfoot_copy_link:hover {
+  text-decoration: underline;
+  color: #fff
+}
+
+.m-yktfoot_mobile {
+  margin-bottom: 20px
+}
+
+.m-yktfoot_mlogo1,.m-yktfoot_mlogo2 {
+  display: block;
+  float: left;
+  width: 111px;
+  height: 32px;
+  background: url(//s.stu.126.net/res/images/ui/download_icon.png) no-repeat 0 0;
+  margin-left: 10px
+}
+
+.m-yktfoot_mlogo2 {
+  background-position: 0 -42px;
+  padding-left: 0
+}
+
+.m-yktfoot_tit {
+  float: right;
+  text-align: center;
+  color: #fff;
+  font-size: 14px
+}
+
+.m-yktfoot_weibo,.m-yktfoot_renren,.m-yktfoot_weixin,.m-yktfoot_yixin {
+  float: right;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(//s.stu.126.net/res/images/ui/shareLinkUI.png) no-repeat;
+  background-position: -34px -52px;
+  margin: 2px 0 0 4px
+}
+
+.m-yktfoot_renren {
+  background-position: -34px -72px
+}
+
+.m-yktfoot_yixin {
+  background-position: -7px -72px
+}
+
+.m-yktfoot_weixin {
+  background-position: -7px -52px
+}
+
+.m-yktfoot_tipQrcode {
+  display: none;
+  z-index: 999;
+  width: 120px;
+  height: 150px;
+  bottom: 30px;
+  left: -63px;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ddd
+}
+
+.m-yktfoot_qrTitle {
+  font-size: 14px;
+  font-family: "微软雅黑";
+  color: #999
+}
+
+.m-yktfoot_tip {
+  width: 14px;
+  height: 10px;
+  right: 62px;
+  bottom: -9px;
+  background: url("//s.stu.126.net/res/images/qrcode/tip.png") no-repeat
+}
+
+.m-yktfoot_weixin:hover .m-yktfoot_tipQrcode,.m-yktfoot_yixin:hover .m-yktfoot_tipQrcode {
+  display: block
+}
+
+a {
+  text-decoration: none
+}
+
+.g-headwrap {
+  height: auto;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+  left: 0
+}
+
+.g-ft {
+  width: 100%
+}
+
+.x-hide,.x-hoverItem .x-child {
+  -webkit-transition-property: opacity,-webkit-transform;
+  -moz-transition-property: opacity,-webkit-transform;
+  -ms-transition-property: opacity,-webkit-transform;
+  -o-transition-property: opacity,-webkit-transform;
+  transition-property: opacity,-webkit-transform;
+  -webkit-transition-duration: 0.15s;
+  -moz-transition-duration: 0.15s;
+  -ms-transition-duration: 0.15s;
+  -o-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -ms-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transform: scale(0.9);
+  opacity: 0;
+  pointer-events: none;
+  display: none\9;
+  visibility: hidden
+}
+
+.x-show,.x-hoverItem:hover .x-child {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  pointer-events: all;
+  display: block\9;
+  visibility: visible
+}
+
+/**
+* 常用方法定义
+*/
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.tac {
+  text-align: center;
+}
+.tal {
+  text-align: left;
+}
+.tar {
+  text-align: right;
+}
+
+.vat{
+  vertical-align: top;
+}
+.vam{
+  vertical-align: middle;
+}
+.clear-fix:after {
+  content: '';
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both
+}
+.clear-fix {
+  zoom: 1;
+  clear: both;
+}
+.hide {
+  display: none;
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.inline-block{
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+.ime-disabled {
+  -webkit-ime-mode:disabled;
+  ime-mode: disabled;
+}
+.word-break{
+  word-wrap: break-word;
+  word-break:break-all;
+}
+
+/* 
+  ykt styles
+*/
+
+.ykt-container {
+  padding-bottom: 170px;
+  position: relative;
+}
+
+.f-pr {
+  position: relative;
+}
+
+.f-pa {
+  position: absolute;
+}
+
+.f-cb:after {
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+  content: '.';
+}
+
+.f-cb {
+  zoom: 1;
+}
+
+.f-fl {
+  float: left;
+}
+
+.f-fr {
+  float: right;
+}
+
+.f-dn {
+  display: none;
+}
+
+.f-thide {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.g-headwrap {
+  height: 58px !important;
+  position: relative;
+}
+
+.g-doc, .g-wrap, .g-flow, .g-all {
+  width: 1205px;
+  margin: 0 auto;
+  text-align: left;
+}
